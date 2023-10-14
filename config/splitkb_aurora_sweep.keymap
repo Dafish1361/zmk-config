@@ -100,7 +100,7 @@
 
     behaviors {
         volknob: volume_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
+            compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             label = "ENCODER_VOLUME_KNOB";
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
