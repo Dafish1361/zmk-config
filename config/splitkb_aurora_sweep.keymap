@@ -98,6 +98,15 @@
         };
     };
 
+    behaviors {
+        vol: vol {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "VOL_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -109,7 +118,7 @@
 &mo 1  &kp SPACE                                                 &kp SPC  &mo 2
             >;
 
-            sensor-bindings = <BINDING C_VOL_UP C_VOL_DOWN>;
+            sensor-bindings = <&vol>;
             
         };
 
