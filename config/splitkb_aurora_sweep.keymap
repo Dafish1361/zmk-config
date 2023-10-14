@@ -103,7 +103,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "VOL_ENCODER";
             #sensor-binding-cells = <0>;
-            bindings = bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
     };
 
