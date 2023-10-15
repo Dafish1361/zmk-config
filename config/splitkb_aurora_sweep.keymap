@@ -108,8 +108,8 @@
         rot_kp: behavior_sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_KP";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DOWN>;
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -122,9 +122,9 @@
 &kp A  &kp S      &kp D  &kp F  &kp G    &kp H  &kp J  &kp K     &kp L    &kp QUOT
 &kp Z  &kp X      &kp C  &kp V  &kp B    &kp N  &kp M  &kp CMMA  &kp DOT  &mt LSFT RET
 &mo 1  &kp SPACE                                                 &kp SPC  &mo 2
+            
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DOWN>;
             >;
-
-            sensor-bindings = <&behavior_sensor_rotate_kp>;
             
         };
 
