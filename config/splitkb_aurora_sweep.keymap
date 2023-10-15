@@ -105,12 +105,6 @@
             label = "ENCODER_VOLUME_KNOB";
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
-        rot_kp: behavior_sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "ENC_KP";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
