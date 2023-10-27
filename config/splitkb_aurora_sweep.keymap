@@ -104,6 +104,11 @@
             #sensor-binding-cells = <0>;
             label = "ENCODER_VOLUME_KNOB";
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+        Volume: Volume {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "VOLUME";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOL_DN>;
         };
     };
 
@@ -120,6 +125,9 @@
             sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DOWN>;
             >;
             
+            >;
+
+            sensor-bindings = <&Volume>, <&Volume>;
         };
 
         left_layer {
