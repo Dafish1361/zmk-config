@@ -151,10 +151,10 @@ nice_view_spi: &spi0 {
 
         left_layer {
             bindings = <
-&kp NUM_1  &kp NUM_2  &kp NUM_3        &kp NUM_4        &kp NUM_5     &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp BACKSPACE
-&kp TAB    &kp LC(S)  &kp DQT          &kp PIPE2        &kp HASH      &kp MINUS  &kp EQL    &kp LBKT   &kp RBKT   &kp DEL
-&kp ESC    &kp TILDE  &kp NON_US_BSLH  &kp NON_US_HASH  &kp TILDE2    &kp MINUS  &kp GRAVE  &kp LBKT   &kp RBKT   &kp DEL
-&mo 1      &kp LGUI                                                                                    &kp RGUI   &mo 2
+&kp NUM_1  &kp NUM_2  &kp NUM_3        &kp NUM_4        &kp NUM_5     &kp NUM_6  &kp NUM_7  &kp NUM_8             &kp NUM_9      &kp BACKSPACE
+&kp TAB    &kp LC(S)  &kp DQT          &kp LC(C)        &kp LC(V)     &kp MINUS  &kp EQL    &kp NON_US_BACKSLASH  &kp SEMICOLON  &kp DEL
+&kp ESC    &kp TILDE  &kp NON_US_BSLH  &kp NON_US_HASH  &kp TILDE2    &kp MINUS  &kp GRAVE  &kp LBKT              &kp RBKT       &kp DEL
+&mo 1      &kp LGUI                                                                                               &tog 3         &mo 2
             >;
         };
 
@@ -172,7 +172,7 @@ nice_view_spi: &spi0 {
 &kp LEFT   &kp N1     &kp N2  &kp N3  &kp UP       &trans  &trans    &trans     &trans        &trans
 &kp RIGHT  &kp N4     &kp N5  &kp N6  &kp DOWN     &trans  &kp PLUS  &kp MINUS  &kp ASTERISK  &trans
 &trans     &kp N7     &kp N8  &kp N9  &kp EQUAL    &trans  &trans    &trans     &trans        &trans
-&kp ENTER  &kp SPACE                                                            &trans        &trans
+&kp ENTER  &kp SPACE                                                            &kp ENTER     &to 0
             >;
         };
 
