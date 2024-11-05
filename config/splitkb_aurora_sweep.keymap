@@ -14,56 +14,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-
-        combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
-
-        shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <20 21>;
-            slow-release;
-            layers = <0>;
-        };
-
-        rightshift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <19 18>;
-            slow-release;
-            layers = <0>;
-        };
-    };
-
-    behaviors {
-        Volume: Volume {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "VOLUME";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>, <&kp C_VOL_DN>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -76,7 +27,7 @@
 &mo 1  &kp SPACE                                                  &kp ENTER  &mo 2
             >;
 
-            sensor-bindings = <&Volume>, <&Volume>;
+            sensor-bindings = <&none>, <&none>;
         };
 
         left_layer {
